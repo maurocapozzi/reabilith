@@ -17,13 +17,9 @@ Landing page desenvolvida para a clínica de fisioterapia e studio de pilates **
 
 4. **Refatoração Modular (Arquitetura Atual)**
    - Abandonamos a abordagem de arquivo único para facilitar a escalabilidade.
-   - O `index.html` foi movido para a raiz do projeto.
-   - Foi criado o diretório `public/` para armazenar `icons/` e `images/`.
-   - Criamos o diretório `styles/` extraindo o CSS para:
-     - `variables.css`: Apenas os `:root` tokens.
-     - `index.css`: Estilização geral e responsividade.
-   - Criamos o diretório `src/js/` com o script interativo das FAQs em `main.js`.
-   - O Docker foi reconfigurado para montar o diretório raiz no Nginx.
+   - O `index.html`, o diretório `styles/` e `js/` foram encapsulados dentro do diretório `public/`.
+   - O diretório `public/` atua agora como o "Document Root" seguro do nosso servidor Nginx.
+   - O Docker foi reconfigurado para montar apenas o diretório `./public` no Nginx, garantindo que arquivos de configuração (como o `docker-compose.yml`) nunca fiquem expostos.
 
 5. **Controle de Versão**
    - Inicializamos o repositório Git.
