@@ -1,0 +1,69 @@
+/* ==========================================================================
+   1. TOKENS & RESET
+   ========================================================================== */
+:root {
+    /* Fonts */
+    --font-titulo: 'Syne', sans-serif;
+    --font-corpo: 'DM Sans', sans-serif;
+
+    /* Bases */
+    --creme: #F0EDE4;
+    --creme-claro: #FAF8F3;
+    --carvao: #1E1C18;
+    --carvao-2: #262420;
+    --carvao-3: #302E28;
+
+    /* Marca */
+    --dourado: #B8965A;
+    --teal: #3BBFBF;
+    --teal-dark: #042C53;
+
+    /* Textos */
+    --texto-1: #1E1C18;
+    --texto-2: #5F5E5A;
+    --texto-3: #888780;
+    --texto-4: #B4B2A9;
+    --texto-inv: #F0EDE4;
+
+    /* Bordas */
+    --borda-creme: #DDD9CE;
+    --borda-carvao: #2E2C28;
+    --borda-dourado: #B8965A;
+    --borda-teal: #3BBFBF;
+
+    /* Estados botão teal */
+    --teal-hover: #2EADAD;
+    --teal-press: #259898;
+
+    /* Estados botão dourado */
+    --dourado-hover-bg: #B8965A;
+    --dourado-press: #96743A;
+
+    /* Funcionais */
+    --sucesso-bg: #E1F5EE;
+    --sucesso-borda: #3BBFBF;
+    --sucesso-txt: #085041;
+    --atencao-bg: #FBF8F3;
+    --atencao-borda: #B8965A;
+    --atencao-txt: #854F0B;
+    --erro-bg: #F9EFEF;
+    --erro-borda: #C0504D;
+    --erro-txt: #7A1F1D;
+
+    /* Utilities */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-full: 999px;
+    
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 32px;
+    --spacing-xl: 48px;
+    --spacing-2xl: 64px;
+    --spacing-3xl: 80px;
+    
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}

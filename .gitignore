@@ -1,0 +1,26 @@
+# Documentação interna
+/_documentacao/
+
+# Dependências e Logs
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Arquivos do SO
+.DS_Store
+Thumbs.db
+
+# Editores / IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Variáveis de ambiente
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
