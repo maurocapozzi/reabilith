@@ -940,7 +940,7 @@ ul {
 }
 
 .footer-card-pilates {
-  background-color: var(--teal);
+  background-color: var(--carvao);
   border-radius: 10px;
   padding: 16px;
   display: flex;
@@ -952,7 +952,7 @@ ul {
   font-family: var(--font-corpo);
   font-weight: 600;
   font-size: 9px;
-  color: var(--teal-dark);
+  color: var(--teal);
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 4px;
@@ -961,17 +961,17 @@ ul {
 .footer-card-pilates .footer-card-body {
   font-family: var(--font-corpo);
   font-size: 14px;
-  color: var(--teal-dark);
+  color: var(--texto-3);
   margin-bottom: 16px;
 }
 
 .footer-btn-pilates {
-  background-color: var(--carvao);
-  color: var(--texto-inv);
+  background-color: var(--teal);
+  color: var(--teal-dark);
   width: 100%;
 }
 .footer-btn-pilates:hover {
-  background-color: var(--carvao-2);
+  background-color: var(--teal-hover);
 }
 
 .footer-card-fisio {

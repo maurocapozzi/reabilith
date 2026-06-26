@@ -1,4 +1,14 @@
 /* ==========================================================================
+   0. OVERRIDE FONT-DISPLAY PARA TABLER ICONS (Lighthouse)
+   ========================================================================== */
+@font-face {
+  font-family: "tabler-icons";
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/fonts/tabler-icons.woff2") format("woff2"),
+       url("https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/fonts/tabler-icons.ttf") format("truetype");
+}
+
+/* ==========================================================================
    1. TOKENS & RESET
    ========================================================================== */
 :root {

@@ -12,19 +12,28 @@
       content="Reabilith: Fisioterapia avançada e novo Studio de Pilates com o Dr. Thiago. Vagas limitadas para Pilates e consultas fisioterapêuticas exclusivas."
     />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- Preload para otimização de LCP e Network Chains -->
+    <link rel="preload" as="video" href="./images/hero-bg.mp4" type="video/mp4" fetchpriority="high" />
+    <link rel="preload" as="image" href="./images/thiago.jpg" fetchpriority="high" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/fonts/tabler-icons.woff2" as="font" type="font/woff2" crossorigin />
+
+    <!-- Google Fonts (CSS Local para otimizar Network Chain) -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./fonts/google-fonts.css" />
 
     <!-- Tabler Icons -->
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css"
+      />
+    </noscript>
 
     <!-- Estilos Locais -->
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -61,7 +70,7 @@
 
     <!-- SEÇÃO 1: HERO -->
     <header class="section hero">
-      <video class="hero-video-bg" autoplay loop muted playsinline>
+      <video class="hero-video-bg" autoplay loop muted playsinline fetchpriority="high">
         <source src="./images/hero-bg.mp4" type="video/mp4" />
       </video>
       <div class="hero-overlay"></div>
